@@ -10,6 +10,8 @@ router.post('/comments', comments.postComment)
 
 router.post('/send', (req, res, next) => {
   const transporter = nodemailer.createTransport({
+    host: 'smtp.gmail.com',
+    secure: true,
     service: 'gmail',
     auth : {
       user: 'nigel.flippo@gmail.com',
