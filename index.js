@@ -9,13 +9,7 @@ app.disable('x-powered-by')
 app.use(cors())
 app.use(bodyParser.json())
 
-app.get('/', (req, res, next) => {
-  res.send(`
-    <div>
-      <h1>API</h1>
-    </div>
-  `)
-})
+app.use(express.static('public'))
 
 app.use(router)
 
