@@ -12,12 +12,12 @@ router.post('/send', (req, res, next) => {
   const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth : {
-      user: 'nigel.flippo@gmail.com',
+      user: 'flippo.nigel@gmail.com',
       pass: 'isisosiris91!'
     }
   })
   const mailOptions = {
-    from: 'nigel.flippo@gmail.com',
+    from: 'flippo.nigel@gmail.com',
     to: 'flippo.nigel@gmail.com',
     subject: `${req.body.name}: ${req.body.phone}`,
     text: `${req.body.message}`,
