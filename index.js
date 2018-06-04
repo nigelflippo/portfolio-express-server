@@ -22,4 +22,4 @@ app.use(router)
 app.use((req, res, next) => res.sendStatus(404))
 
 const PORT = process.env.PORT || 5000
-app.listen(PORT, () => console.log(`Port: ${PORT}`))
+app.listen(PORT, () => console.log(`Port: ${PORT}`));
